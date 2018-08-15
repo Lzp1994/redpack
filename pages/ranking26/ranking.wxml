@@ -1,0 +1,23 @@
+<!--pages/ranking26/ranking.wxml-->
+<view class='main'>
+  <view class='item' wx:for="{{num}}">
+    <view class='item-right'>
+      <view class='pt26'>
+        登榜金额   <text class='color-red'>￥100.00</text>
+      </view>
+      <view class='pt26'>
+        使用时间   <text class='color-red'>30秒</text>
+      </view> 
+    </view>
+    
+
+     <view class='level'>NO.1</view>
+     <view class='item-left'>
+      <view class='user-avatar'>
+        <image src='/images/20180103112645.jpg'></image>
+      </view>
+      <text>Lzp双月</text> 
+    </view>  
+
+  </view>
+</view>

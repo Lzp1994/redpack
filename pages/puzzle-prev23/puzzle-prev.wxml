@@ -1,0 +1,20 @@
+<!--pages/puzzle-prev23/puzzle-prev.wxml-->
+<view class='puzzle-box'>
+  <view class='alarm-box'>
+    <text class='iconfont icon-icon-test alarm'></text>
+    <text>用时{{second}}秒</text>
+  </view>
+
+  <view class='title'>谁能拼出这张图</view>
+
+  <canvas canvas-id='myCanvas' class='myCanvas' style=""  bindtouchstart='start' bindtouchmove='move' bindtouchend='end'>
+    <!-- <block wx:for="{{num}}">
+    <view style='float:left;width:200rpx;height:200rpx;text-align:center;line-height:200rpx;'>123</view>
+    </block> -->
+  </canvas>
+
+  <view class='tips' wx:if="{{isShowPrev}}">点击图块交换位置，完成拼图即可获得赏金</view>
+</view>
+<view class='btn' bindtap='begin' wx:if="{{isShowBegin}}">挑战开始</view>
+<view class='btn mt20' bindtap='prevPic' wx:if="{{isShowPrev}}">查看原图</view>
+<view class='btn mt20' bindtap='toIndex' wx:if="{{isShowPrev}}">放弃挑战</view>

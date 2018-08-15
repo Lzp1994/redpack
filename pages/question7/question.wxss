@@ -1,0 +1,52 @@
+/* pages/question7/question.wxss */
+page{
+  background: #f6f7f5;
+}
+.main{
+  padding: 30rpx;
+}
+.item{
+  background: #fff;
+}
+.item{
+  margin-bottom: 16rpx;
+}
+.item .tit,.item-hide{
+  padding:26rpx;
+  
+}
+.item-hide{
+  border-top: 1px solid #ccc;
+  display: none;
+}
+.color-grey{
+  color: #ccc;
+}
+.show{
+  display: block;
+}
+.item .tit .img{
+  width:46rpx;
+  height:26rpx;
+  float:right;
+}
+.item .tit .icon{
+  font-size: 46rpx;
+}
+
+text{
+  font-size: 28rpx;
+}
+.btn-contact{
+  width:100%;
+  margin-top: 40rpx;
+  margin-bottom: 20rpx;
+  background: #28a439;
+  color: #fff;
+  border-radius: 5rpx;
+  font-size: 28rpx;
+}
+ .btn-contact .icon-kefu{
+  font-size: 30rpx;
+  margin-right: 22rpx;
+} 

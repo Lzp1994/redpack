@@ -1,0 +1,93 @@
+/* pages/share-puzzle4/share-puzzle.wxss */
+page{
+background: #d96347;
+}
+.main{
+  padding:0 34rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.user-avatar{
+  width:150rpx;
+  height:150rpx;
+  border-radius: 50%;
+  margin-top: 18rpx;
+}
+.user-avatar image{
+  width:100%;
+  height:100%;
+  border-radius: 50%;
+}
+.user-name{
+  margin-top: 8rpx;
+}
+.user-name text{
+  font-size: 32rpx;
+  color: #fadeac;
+}
+.user-name image{
+  width:32rpx;
+  height:38rpx;
+}
+.tit{
+  margin-top: 28rpx;
+}
+.tit text{
+  font-size: 42rpx;
+  color: #fbe0b0;
+  font-weight: bold;
+}
+.img{
+  margin-top: 58rpx;
+  width:246rpx;
+  height:246rpx;
+}
+.img image{
+  width:100%;
+  height:100%;
+  border-radius: 50%;
+}
+.share{
+  margin-top: 40rpx;
+  padding:46rpx 22rpx 24rpx 22rpx;
+  width:90%;
+  border-radius: 5px;
+  background: #fff;
+}
+.btn-share{
+  background: #28a439;
+  color: #fff;
+  font-size: 32rpx;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.btn-sharepic{
+  margin-top: 34rpx;
+  padding: 14rpx 0;
+  text-align: center;
+  background: #fff;
+  font-size: 32rpx;
+  font-weight: bold;
+  border:1px solid #c7c7c8;
+  border-radius: 5px;
+}
+.btn-try{
+  margin-top: 66rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color: #9b9a99;
+  font-weight: bold;
+}
+.time{
+  margin-top: 28rpx;
+}
+.time text{
+  font-size: 24rpx;
+  color:#fbdeae;
+}
+.time .alarm{
+  font-size: 28rpx;
+  margin-right: 10rpx;
+}

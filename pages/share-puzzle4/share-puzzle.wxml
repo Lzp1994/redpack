@@ -1,0 +1,30 @@
+<!--pages/share-puzzle4/share-puzzle.wxml-->
+<view class='main'>
+  <view class='user-avatar'>
+    <image src='{{userInfo.avatarUrl}}'></image>
+  </view>
+
+  <view class='user-name'>
+    <text>{{userInfo.nickName}}发起了一个拼图PK</text>
+    <image src='/images/20180103112645.jpg'></image>
+  </view>
+
+  <view class='tit'>
+    <text>一起来拼智力领红包</text>
+  </view>
+
+  <view class='img'>
+    <image src='/images/20180103112645.jpg'></image>
+  </view>
+
+  <view class='share'>
+    <button class='btn-share' open-type='share'>转发到好友或群聊</button>
+    <view class='btn-sharepic'><text>生成朋友圈分享图</text></view>
+    <view class='btn-try'><text>我也试一试>></text></view>
+  </view>
+
+  <view class='time'>
+    <text class='iconfont icon-icon-test alarm'></text>
+    <text>拼图时间：不限制</text>
+  </view>
+</view>

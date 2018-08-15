@@ -1,0 +1,67 @@
+/* pages/ranking26/ranking.wxss */
+page{
+  background: #d96347;
+}
+.main{
+  padding:0 32rpx;
+}
+.tc{
+  text-align: center;
+}
+.item{
+  position: relative; 
+  margin-top: 70rpx;
+  width:100%;
+  height:138rpx;
+  background: #fff;
+  border-radius: 5px;
+  margin-bottom: 58rpx;
+}
+.item-right{
+  margin-left:232rpx;
+}
+.pt26{
+  padding-top: 26rpx;
+  font-size: 28rpx;
+  color:#c6c5c6;
+  font-weight: bold;
+}
+.color-red{
+  color:#d96547;
+}
+.item-left{
+  position: absolute;
+  top:-50rpx;
+  left:16rpx;
+  width:120rpx;
+  text-align:center;
+}
+.user-avatar{
+  width:120rpx;
+  height:120rpx;
+
+}
+.user-avatar image{
+  width:100%;
+  height:100%;
+  border-radius: 50%;
+}
+.item-left text{
+  font-size: 26rpx;
+  font-weight: bold;
+  color:#d96547;
+}
+.level{
+  position: absolute; 
+  width:245rpx;
+  height: 46rpx;
+  top:-32rpx;
+  left:96rpx;
+  line-height: 46rpx;
+  background: #b8b5bc;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 28rpx;
+  font-weight: bold;
+  color:#d96547;
+}

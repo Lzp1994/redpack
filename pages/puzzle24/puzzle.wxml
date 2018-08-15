@@ -1,0 +1,26 @@
+<!--pages/puzzle24/puzzle.wxml-->
+<view class='puzzle-box'>
+  <view class='alarm-box'>
+    <text class='iconfont icon-icon-test alarm'></text>
+    <text>用时{{second}}秒</text>
+  </view>
+
+  <view class='title'>谁能拼出这张图</view>
+
+  <view class='puzzle' style='width:{{imgWidth}}rpx;height:{{imgHeight}}rpx'>
+    <canvas canvas-id='myCanvas' class='myCanvas' style=""  bindtouchstart='start' bindtouchmove='move' bindtouchend='end'>
+      <block wx:for="{{num}}">
+      <view class='can-box'>
+        
+      </view>
+      </block>
+    </canvas>
+    <image src='{{imgUrl}}' style='display:none'></image>
+  </view>
+
+  <view class='tips' wx:if="{{isShowPrev}}">点击图块交换位置，完成拼图即可获得赏金</view>
+</view>
+<view class='btn' bindtap='begin' wx:if="{{isShowBegin}}">挑战开始</view>
+<view class='btn mt20' bindtap='prevPic' wx:if="{{isShowPrev}}">查看原图</view>
+<view class='btn mt20' bindtap='toIndex' wx:if="{{isShowPrev}}">放弃挑战</view>
+

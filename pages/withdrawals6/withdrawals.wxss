@@ -1,0 +1,108 @@
+/* pages/withdrawals6/withdrawals.wxss */
+page{
+  /* position: relative; */
+  height: 100%;
+  background: #f6f7f5; 
+}
+.main{
+  /* width:90%;
+  margin:0 auto;
+  overflow-x:hidden;   */
+  padding: 84rpx 33rpx 0rpx 33rpx; 
+}
+.con{
+  width:90%;
+  margin:0 auto;
+  background: #ffffff;
+   padding:0 36rpx;  
+}
+.cash{
+  display: flex;
+  flex-direction: row;
+  padding-top: 30rpx;
+}
+.flex1{
+  flex: 1;
+}
+.flex2{
+  flex: 2;
+}
+.tc{
+  text-align: center;
+}
+.mt68{
+  margin-top: 68rpx;
+}
+.mt52{
+  margin-top: 52rpx;
+}
+.in{
+  display: flex;
+  flex-direction: row;
+  padding:5rpx 0;
+  border-bottom: 1px solid #ccc;
+}
+.in .icon{
+  width:52rpx;
+  height:52rpx;
+  margin-right: 10rpx;
+}
+.color-blue{
+  color: #57698e;
+}
+.btn{
+  width: 100%;
+  text-align: center;
+  margin: 44rpx 0;
+  padding:22rpx 0;
+  border-radius: 5rpx;
+  color:#fff;
+  background: #28a439;
+}
+.contact{
+  position: absolute;
+  bottom:32rpx;
+  /* left:50%-44rpx; */
+   /* text-indent: -72rpx;  */
+}
+.question{
+  position: absolute;
+  top:24rpx;
+  right:36rpx;
+}
+.pt8{
+  padding-top: 8rpx;
+}
+.mb32{
+  padding-bottom: 32rpx;
+}
+.fz22{
+  font-size: 22rpx;
+}
+.fz24{
+  font-size: 26rpx;
+}
+.fz30{
+  font-size: 30rpx;
+}
+.fz36{
+  font-size: 36rpx;
+}
+.mr10{
+  margin-right: 10rpx;
+}
+.fz44{
+  font-size: 46rpx;
+}
+button{
+  margin: 0;
+  padding: 0;
+  border:0;
+   background: #f6f7f5; 
+}
+button::after{
+  transform: scale(0);
+}
+.button-hover{
+  background: #f6f7f5; 
+}

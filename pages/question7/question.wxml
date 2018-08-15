@@ -1,0 +1,20 @@
+<!--pages/question7/question.wxml-->
+<view class='main'>
+  <view class='item' wx:for="{{questionList}}" wx:key="{{index}}" data-id="{{index}}"  bindtap='showView'>
+    <view class="tit {{questionList[num].id === index && isShow[num] == 1 ? 'color-grey':''}}">
+      <text>{{item.question}}</text>
+      <view class='img'>
+        <text class='iconfont icon-caidan01 icon'></text>
+      </view>
+    </view>
+
+    <view class="item-hide {{questionList[num].id === index && isShow[num] == 1 ? 'show':''}}">
+      <text>{{item.answer}}</text>
+    </view>
+  </view>
+
+  <button class='btn-contact' open-type='contact'>
+     <text class='iconfont icon-lianxikefu1 icon-kefu'></text> 
+     <text>联系在线客服</text> 
+  </button>
+</view>

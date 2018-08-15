@@ -1,0 +1,16 @@
+<!--pages/ad-detail22/ad-detail.wxml-->
+<view class='main'>
+  <view class='item' wx:for="{{num}}">
+    <view class='pintu'>
+      <image src='/images/20180103112645.jpg'></image>
+    </view>
+    <view class='pintu-info'>
+      <view class='bb'>
+        <text>广告标语:广告词语广告词语广告词语广告词语</text>
+      </view>
+      <view class='bb'><text>难度系数：3*3</text></view>
+      <view class='bb'><text>红包数量：100</text></view>
+      <view class='bb'><text>红包余额：10000</text></view>
+    </view>
+  </view>
+</view>

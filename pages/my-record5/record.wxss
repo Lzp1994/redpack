@@ -1,0 +1,145 @@
+/* pages/my-record/record.wxss */
+page{
+ position: relative;
+ background: #f6f7f5;
+}
+swiper{
+  width:100%;
+  height:600px;
+}
+.tabs{
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background: #fff;
+  width:100%;
+  height:65rpx;
+  display: flex;
+  flex-direction: row;
+   padding:35rpx 0 0 0; 
+}
+.tabs-item{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tabs-item text{
+  font-size: 30rpx;
+  color: #ababac;
+}
+.selected text{
+  color:#da8667;
+}
+.selected .line{
+  background: #d5795c;
+  width:100rpx;
+  height:6rpx;
+  margin-top: 20rpx;
+}
+.sp-con{
+  margin-top: 140rpx;
+  width:100%;
+}
+.sp-con .user-avatar{
+  width: 120rpx;
+  height:120rpx;
+  border-radius: 50%;
+  margin-bottom: 20rpx;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.box{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 60rpx;
+  margin-bottom: 114rpx;
+}
+.box-item{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.box-item .num{
+  margin-top: 20rpx;
+}
+.scroll-box{
+  height:449rpx;
+}
+.fl{
+  display: flex;
+  flex-direction: row;
+}
+.list +.list{
+  border-top: 1px solid #ccc;
+}
+.list{
+  position: relative;
+  width: 100%;
+  background: #fff;
+  padding:24rpx 0;
+  
+}
+.list-item{
+  width: 100%;
+}
+
+.list .item-avatar{
+  position: absolute;
+  top:34rpx;
+  left:42rpx;
+  border:2px solid #ccc;
+  width: 80rpx;
+  height:80rpx;
+}
+.list .item-avatar image{
+  width: 100%;
+  height:100%;
+}
+.list-item .tit{
+  margin-left: 60rpx;
+}
+.list-item .ml136{
+  margin-left: 140rpx;
+}
+.list-item .money{
+  margin-right: 40rpx;
+}
+.fr{
+  float: right;
+}
+.color-black{
+  color: #323232;
+  font-weight: bold;
+}
+.color-grey{
+  color: #9a9899;
+}
+.color-list{
+  color: #4a4948;
+}
+.fs22{
+  font-size: 22rpx;
+}
+.fs28{
+  font-size: 28rpx;
+}
+.fs32{
+  font-size: 32rpx;
+}
+.fs36{
+  font-size: 36rpx;
+}
+.question{
+  position: absolute;
+  color: #57698e;
+  font-size: 28rpx;
+  bottom:45rpx;
+}

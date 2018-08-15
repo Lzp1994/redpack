@@ -1,0 +1,89 @@
+<!--pages/my-record/record.wxml-->
+
+<view class='tabs'>
+  <view class="tabs-item {{currentTab == 0 ? 'selected':''}}" bindtap='selected' data-curr='0'>
+    <text>我发出的</text>
+    <view class='line'></view>
+  </view>
+  <view class="tabs-item {{currentTab == 1 ? 'selected':''}}" bindtap='selected' data-curr='1'>
+    <text>我收到的</text>
+    <view class='line'></view>
+  </view>
+</view>
+
+<swiper class='sp-con' bindchange='bc' current='{{currentTab}}' style="height:{{spHeight}}rpx">
+  <swiper-item class="sp-item">
+  <view class='main'>
+    <image class='user-avatar' src='{{userInfo.avatarUrl}}'></image>
+    <text class='color-black fs28'>{{userInfo.nickName}}共发出</text>
+    <view class='box'>
+
+      <view class='box-item'>
+        <text class='color-grey fs28'>金额（元）</text>
+        <text class='num color-black fs36'>2.00</text>
+      </view>
+
+      <view class='box-item'>
+        <text class='color-grey fs28'>数量（个）</text>
+        <text class='num color-black fs36'>2</text>
+      </view>
+    </view>
+
+    <scroll-view class='scroll-box' scroll-y="true">
+    <view class='list' wx:for="{{num}}">
+      <view class='list-item'>
+        <text class='tit color-list fs32'>拼出这张图有赏</text>
+        <text class='fr money color-list fs32'>1.00元</text>
+      </view>
+
+      <view class='list-item'>
+        <text class='tit color-grey fs22'>01月03日 17：33</text>
+        <text class='fr money color-grey fs22'>1/1</text>
+      </view>
+    </view>
+    </scroll-view>
+
+    <text class='question' bindtap='toQuestion'>常见问题</text>
+  </view>
+  </swiper-item>
+  <swiper-item>
+    <view class='main'>
+    <image class='user-avatar' src='{{userInfo.avatarUrl}}'></image>
+    <text class='color-black fs28'>{{userInfo.nickName}}共发出</text>
+    <view class='box'>
+
+      <view class='box-item'>
+        <text class='color-grey fs28'>金额（元）</text>
+        <text class='num color-black fs36'>2.00</text>
+      </view>
+
+      <view class='box-item'>
+        <text class='color-grey fs28'>数量（个）</text>
+        <text class='num color-black fs36'>2</text>
+      </view>
+    </view>
+
+    <scroll-view class='scroll-box' scroll-y="true">
+    <view class='list' wx:for="{{num}}">
+      <view class='item-avatar'> 
+        <image src='{{userInfo.avatarUrl}}'></image>
+      </view>
+      
+      <view class='list-item'>
+        <text class='tit color-list fs32 ml136'>{{userInfo.nickName}}</text>
+        <text class='fr money color-list fs32'>1.00元</text>
+      </view>
+
+      <view class='list-item'>
+        <text class='tit color-grey fs22 ml136'>01月03日 17：33</text>
+      </view>
+      
+    </view>
+    </scroll-view>
+
+    <text class='question' bindtap='toQuestion'>常见问题</text>
+  </view>
+  </swiper-item>
+</swiper>
+
+

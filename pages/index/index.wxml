@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class="userinfo">
+  <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+  <text class="userinfo-nickname">Hi，{{userInfo.nickName}}</text>
+  <text>选择一张图片，好友拼得来红包就归Ta</text>
+  <image class="sel-img" src='/images/20180103112645.jpg' bindtap='chooseImg'></image>
+  <view class="contact">
+    <text class='iconfont icon-lianxikefu1 icon'></text>
+    <button open-type='contact'>联系客服</button>
+  </view>     
+</view>
+<view class='menu'>
+  <view class='menu-item' bindtap='toMyRecord'>
+    <text class='iconfont icon-jiluchaxun tab-icon'></text>
+    <text>红包记录</text>
+  </view>
+
+  <view class='menu-item' bindtap='toWithdrawals'>
+    <text class='iconfont icon-xianjin2 tab-icon'></text>
+    <text>现金提现</text>
+  </view>
+
+  <view class='menu-item' bindtap='toAdvertisement'>
+    <text class='iconfont icon-xianshicuxiao tab-icon'></text>
+    <text>限时抢</text>
+  </view>
+
+  <view class='menu-item' bindtap='toQuestion'>
+    <text class='iconfont icon-wenti3 tab-icon'></text>
+    <text>客服/问题</text>
+  </view>
+</view>
+

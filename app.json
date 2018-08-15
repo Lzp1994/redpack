@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/puzzle24/puzzle",
+    "pages/create-puzzle3/create-puzzle",
+    
+    "pages/puzzle-prev23/puzzle-prev",
+    "pages/index/index",
+    
+    
+    
+    "pages/share-puzzle4/share-puzzle",
+    
+    "pages/cutInside/cutInside",
+    
+    
+    "pages/my-record5/record",
+    "pages/question7/question",
+    "pages/ranking26/ranking",
+    "pages/ad-detail22/ad-detail",
+    "pages/advertisement21/advertisement",
+    "pages/withdrawals6/withdrawals"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "#f7f6c1",
+    "navigationBarBackgroundColor": "#d96347",
+    "navigationBarTitleText": "天天拼图",
+    "navigationBarTextStyle": "#f7f6c1"
+  }
+}

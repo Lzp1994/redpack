@@ -1,0 +1,26 @@
+<!--pages/withdrawals6/withdrawals.wxml-->
+<view class='main'>
+<view class='con'>
+  <view class='cash'>
+    <view class='flex1 fz30 pt8'><text>账户余额</text></view>
+    <view class='flex2'><text class='fz44'>0.00</text>元</view>
+  </view>
+
+  <view class='mt68'>
+    <text class='fz30'>提现余额</text>
+  </view>
+
+  <view class='in mt52'>
+    <text class='fz36 mr10'>￥</text>
+    <input type='number'></input>
+  </view>
+
+  <view class='mt68 fz24'>提现到微信钱包里，<text class='color-blue'>全部提现</text></view>
+
+  <view class='btn'>提现</view>
+
+  <view class='tc fz24 mb32'>1-5个工作日到账</view>
+</view>
+ <text class='color-blue tc fz22 contact' bindtap='toQuestion' style='left:{{TxLeft}}rpx'>常见问题</text> 
+ <button class='color-blue fz24 question' open-type='contact'>联系客服</button> 
+</view>

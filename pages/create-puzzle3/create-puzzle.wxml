@@ -1,0 +1,60 @@
+<!--pages/create-puzzle3/create-puzzle.wxml-->
+<view class='mask' wx:if="{{isShow}}">
+  <view class='mask-box'>
+    <block wx:for="{{tit}}">
+    <view class='mask-title' bindtap='getTitle' data-id="{{index}}"><text data-value="{{item.title}}">{{item.title}}</text></view>
+    </block>
+  </view>
+</view>
+<view class='main'>
+  <view class='home' bindtap='toIndex'>
+    <text class='iconfont icon-shouye'></text>
+  </view>
+  
+  <view class='puzzle-info'>
+    <view class='tit'>
+      <text wx:if="{{status}}">谁能把这张珍藏的图片拼出来</text>
+      <text>{{value}}</text>
+      <view class='tit-icon' bindtap='showMod'>
+        <text class='iconfont icon-choose-copy down'></text>
+      </view>
+    </view>
+
+    <view class='line'>  
+      <text>拼图难度：</text>
+      <radio-group class="radio-group" bindchange="radioChange">
+        <label class="radio" wx:for="{{items}}">
+          <!-- <text class='newRadio'>
+          </text>
+          <text class='cover'></text> -->
+          <radio value='{{item.value}}' checked="{{item.checked}}"/>{{item.value}}
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='line'>
+      <text>赏金（元）：</text>
+      <input type='number' placeholder='填写需要打赏的金额' placeholder-style='color:#d5bc8f;font-size:30rpx' bindinput='getMoney'></input>
+    </view>
+
+    <view class='line'>
+      <text>数量（个）：</text>
+      <input type='number' placeholder='填写可以玩的人数' placeholder-style='color:#d5bc8f;font-size:30rpx' bindinput='getNum'></input>
+    </view>
+  </view>
+
+  <view class='m32'><text>需要支付￥0.00手续费</text></view>
+  <view class='btn' bindtap='pay'>生成拼图PK</view>
+
+  <view class='img'>
+    <image src='{{imgUrl}}'></image>
+  </view>
+
+  <view class='tips'>
+    <text class='iconfont icon-jinggao jinggao'></text>
+    <text>请勿上传色情以及其他违禁图片，本小程序</text>
+    <text>在收到投诉后有权删除相关内容</text>
+  </view>
+  
+</view>
+
